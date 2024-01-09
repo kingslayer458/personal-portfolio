@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Web Developer</title>
+    
+
+</head>
+<style>
+    body {
+      background-image: url('back.jpg');
+      filter: contrast(200%);
+    }</style>
+
+    <div class="center">
+        
+       </div>
+
+
+
+</body>
+
+
+
+<body class="bg-gray-100">
+
+    <header class="bg-black  p-4">
+        <div class="container mx-auto">
+            
+            
+        </div>
+
+       
+<button id="menuButton" class="md:hidden focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
+
+<section class="bg-gray-200 p-8">
+    <div class="container mx-auto flex items-center justify-center">
+        
+        <img src="profile.jpg" alt="Your Name" class="rounded-full h-50 w-60 object-cover border-4 border-grey-500">
+
+        
+
+        
+        <div class="ml-8">
+            <h1 class="text-3xl font-semibold">C MANOJ KUMAR</h1>
+            <p class="text-sm text-gray-600">Web Developer, Programmer & PC Enthusiast</p>
+            <p class="mt-2" id="auto-typing-paragraph">Welcome to my portfolio! <span id="auto-typing"></span></p>
+        
+           
+            <div class="mt-4 space-x-2">
+                <a href="https://github.com/kingslayer458" target="_blank" class="bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600">GitHub</a>
+                <a href="https://www.linkedin.com/in/manoj-kumar-3b9855206/" target="_blank" class="bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600">LinkedIn</a>
+                <a href="https://steamcommunity.com/profiles/76561199021485011/" target="_blank" class="bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600">Steam</a>
+                <a href="https://www.youtube.com/@mjkumar77717" target="_blank" class="bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600">Youtube</a>
+                
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const autoTypingText = "I'm passionate about creating web applications and exploring new technologies.";
+                const autoTypingElement = document.getElementById("auto-typing");
+                const autoTypingParagraph = document.getElementById("auto-typing-paragraph");
+        
+                let charIndex = 0;
+        
+                function type() {
+                    if (charIndex < autoTypingText.length) {
+                        autoTypingElement.innerHTML += autoTypingText.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, 50); 
+                    }
+                }
+        
+                
+                setTimeout(function () {
+                    type();
+                }, 1000); 
+            });
+        </script>
+</section>
+
+<nav id="mobileNav" class="hidden md:flex flex-col md:flex-row md:items-center md:justify-end">
+    
+    <a href="#projects" class="text-white hover:text-gray-300 py-2 px-4">Projects</a>
+    <a href="#skills" class="text-white hover:text-gray-300 py-2 px-4">Skills</a>
+    <a href="#about" class="text-white hover:text-gray-300 py-2 px-4">About Me</a>
+</nav>
+
+    </header>
+
+        <section id="projects" class="container mx-auto my-8">
+            <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+            
+            <!-- Project Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <h3 class="text-lg font-semibold">SSH Login using brute force</h3>
+                    <p class="text-gray-600">The novelty of this project lies in its innovative approach to use of certain modules to make then interface interactive and plus sticks to its objectives.it help to remotely control host and transfer data seamlessly. This can be used as a vulnerability scanner to discover hidden ports related to SSH, can be implemented in windows and Linux os</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <h3 class="text-lg font-semibold">Gaming Wallpaper website with Html and Css</h3>
+                    <p class="text-gray-600">The Gaming Wallpaper Website project aims to create a platform where gaming enthusiasts can discover and download high-quality gaming-themed wallpapers for their desktops, laptops, or gaming setups. The website will provide a diverse collection of wallpapers featuring popular games, characters, and gaming genres.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow-md">
+                    <h3 class="text-lg font-semibold">Simple calculator with Html and Css</h3>
+                    <p class="text-gray-600">The simple calculator project provides a foundational understanding of web development, including HTML for structure, CSS for styling, and JavaScript for interactivity. It serves as a starting point for further enhancements and features in calculator applications. Users can perform basic arithmetic calculations in a user-friendly and visually appealing environment.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                
+            </div>
+        </section>
+            
+
+            
+        </div>
+    </section>
+
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+        
+        <ul class="list-disc list-inside">
+            <li>HTML5, CSS3, Data structures</li>
+            <li>linux tools,video editing</li>
+            <li>Responsive Web Design</li>
+            <li>python,C++,JavaScript</li>
+            
+        </ul>
+    </section>
+
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p>A strategic thinker with a track record of success in developing and implementing marketing initiatives that have increased brand awareness and generated leads.</p>
+    </section>
+
+    <section id="contact" class="container mx-auto my-8">
+        <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Contact Form -->
+            <div>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-blue-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-blue-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-blue-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Send Message</button>
+                </form>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="text-gray-600">
+                <p class="mb-2">Feel free to get in touch with me. You can reach out via the following:</p>
+                <ul>
+                    <li>Email: <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">mk458557@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/manoj-kumar-3b9855206/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+<footer class="bg-black text-white p-4">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+                <ul>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#skills" class="hover:underline">Skills</a></li>
+                    <li><a href="#about" class="hover:underline">About Me</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                  
+                </ul>
+            </div>
+
+        
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Connect with Me</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/manoj-kumar-3b9855206/" target="_blank" class="hover:underline">LinkedIn</a></li>
+                    <li><a href="https://github.com/kingslayer458" target="_blank" class="hover:underline">GitHub</a></li>
+                   
+                </ul>
+            </div>
+
+            <!-- Copyright and Credits -->
+            <div>
+                <p>&copy; 2024 Kinglslayer458. All rights reserved.</p>
+                <p class="text-sm">created by manoj kumar ❤️ </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="scripts.js"></script>
+  
+</body>
+
+</html>
+
+
